@@ -7,6 +7,7 @@
         <p class="lead">It's a gallery of custom Pokemon</p>
     </div>
 </div>
+@include('inc.messages')
 <div class="row">
   <div class="col-lg-4">
   </div>

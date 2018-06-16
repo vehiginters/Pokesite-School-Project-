@@ -8,21 +8,21 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-              <a class="nav-link" href="/" style="color: white;">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link {{Request::is('/') ? 'active' : ''}}" href="/" style="color: white;">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/custom" style="color: white;">Custom Pokemon</a>
+              <a class="nav-link {{Request::is('custom') ? 'active' : ''}}" href="/custom" style="color: white;">Custom Pokemon</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/submit" style="color: white;">Submit your own</a>
+              <a class="nav-link {{Request::is('submit') ? 'active' : ''}}" href="/submit" style="color: white;">Submit your own</a>
             </li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li class="nav-item">
-              <a class="nav-link" href="/login" style="color:#76a4ed">Login</a>
+              <a class="nav-link {{Request::is('login') ? 'active' : ''}}" href="/login" style="color:#76a4ed">Login</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/register" style="color:#76a4ed">Register</a>
+              <a class="nav-link {{Request::is('register') ? 'active' : ''}}" href="/register" style="color:#76a4ed">Register</a>
             </li>
           </ul>
         </div>

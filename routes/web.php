@@ -11,19 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
-Route::get('/custom', function () {
-    return view('custom');
-});
-Route::get('/submit', function () {
-    return view('submit');
-});
-Route::get('/login', function () {
-    return view('signin');
-});
-Route::get('/register', function () {
-    return view('register');
-});
+Route::get('/', 'PageController@getHome');
+Route::get('/custom', 'PageController@getCustom');
+Route::get('/submit', 'PageController@getSubmit');
+Route::get('/login', 'PageController@getLogin');
+Route::get('/register', 'PageController@getRegister');
 Route::post('/submit/submit','PokemonController@submit');
+Route::get('/submissions', 'PokemonController@getsubmit');

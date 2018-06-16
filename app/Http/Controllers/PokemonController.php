@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Custom;
 
 class PokemonController extends Controller
 {
@@ -11,7 +12,18 @@ class PokemonController extends Controller
         'pokemon_name'=>'required',
         'poke_image'=>'required'
       ]);
-      return 'Success!';
 
+
+      $poke_entry=new Custom;
+      $poke_entry->pokemon_name=$request->input('pokemon_name');
+      $poke_entry->pokemon_description=$request->input('pokemon_description');
+
+      $poke_entry->save();
+
+      return redirect('/')->with('success','Pokemon uploaded');
+    }
+    public function getsubmit(){
+        $pokemons=Custom::all();
+        return view('submissions')->with('pokemons',$pokemons);
     }
 }
