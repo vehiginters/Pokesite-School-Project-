@@ -10424,7 +10424,12 @@ a.text-dark:focus {
 }
 
 .boxy {
-  background-color: #888e99;
-  padding: 10pt;
+  background-color: #e6e8ed;
+  padding: 12pt;
+}
+
+.imgs {
+  height: 250px;
+  width: 250px;
 }
 
