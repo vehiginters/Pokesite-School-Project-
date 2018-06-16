@@ -2,10 +2,13 @@
 
 @section('content')
 
+@if(auth::guest())
 <div class="text-center mt-5 pt-3 pb-3" style="background-color:#c96e79 ">
   <p class="lead">Attention! To post your own pokemon you must be <a href="/login">logged in</a></p>
 </div>
+@endif
 @include('inc.messages')
+@if(Auth::check())
 <div class="container mt-5">
 <div class="row">
   <div class="col-md-3">
@@ -24,6 +27,7 @@
     {{Form::label('poke_image','Pokemon image')}}
     {{Form::file('poke_image'),['class'=>'form-control-file']}}
   </div>
+
   <div class="text-center">
     {{Form::submit('Submit',['class'=>'btn btn-primary'])}}
   </div>
@@ -33,9 +37,5 @@
 </div>
 </div>
 </div>
-<form>
-  <div class="form-group text-center" style="position:absolute;left:30%;">
-
-  </div>
-</form>
+@endif
 @endsection

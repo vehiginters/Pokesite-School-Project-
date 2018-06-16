@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use App\Custom;
+
 
 class PokemonController extends Controller
 {
@@ -17,7 +19,7 @@ class PokemonController extends Controller
       $poke_entry=new Custom;
       $poke_entry->pokemon_name=$request->input('pokemon_name');
       $poke_entry->pokemon_description=$request->input('pokemon_description');
-
+      $poke_entry->user_id=Auth::id();
       $poke_entry->save();
 
       return redirect('/')->with('success','Pokemon uploaded');

@@ -8,7 +8,14 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 class User extends Authenticatable
 {
     use Notifiable;
-
+    public function getId()
+    {
+      return $this->id;
+    }
+    public function getvote()
+    {
+      return $this->voted;
+    }
     /**
      * The attributes that are mass assignable.
      *

@@ -17,6 +17,7 @@ class CreateCustomsTable extends Migration
             $table->increments('id');
             $table->string('pokemon_name');
             $table->mediumtext('pokemon_description');
+            $table->integer('user_id');
             $table->timestamps();
         });
     }

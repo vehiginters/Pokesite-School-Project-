@@ -17,10 +17,12 @@
   <div class="col-lg-4">
   </div>
 </div>
+@if(Auth::guest())
 <div class="jumbotron text-center mt-4" >
   <p>If you are new to the page please <a href="/register">Register here</a></p>
   <p>Or if you already have an account <a href="/login">Login here</a></p>
 </div>
+@endif
 <div>
   <p>This site is a <b>Laravel</b> project made for learning porpuses</p>
   <p>Made by University of Latvia first course student <b>Ginters Juris Vehi</b></p>
