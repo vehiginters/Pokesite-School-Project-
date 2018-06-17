@@ -3,8 +3,8 @@
 @section('content')
 <div class="jumbotron text-center">
     <div class="container">
-        <h1>Welcome to The Custom Pokedex</h1>
-        <p class="lead">It's a gallery of custom Pokemon</p>
+        <h1>{{trans('homepage.hello')}}</h1>
+        <p class="lead">{{trans('homepage.hello-desc')}}</p>
     </div>
 </div>
 @include('inc.messages')
@@ -19,13 +19,13 @@
 </div>
 @if(Auth::guest())
 <div class="jumbotron text-center mt-4" >
-  <p>If you are new to the page please <a href="/register">Register here</a></p>
-  <p>Or if you already have an account <a href="/login">Login here</a></p>
+  <p>{{trans('homepage.new')}}<a href="/register">{{trans('homepage.register')}}</a></p>
+  <p>{{trans('homepage.already')}} <a href="/login">{{trans('homepage.login')}}</a></p>
 </div>
 @endif
 <div>
-  <p>This site is a <b>Laravel</b> project made for learning porpuses</p>
-  <p>Made by University of Latvia first course student <b>Ginters Juris Vehi</b></p>
+  <p>{{trans('homepage.this')}}<b>Laravel</b>{{trans('homepage.learning')}}</p>
+  <p>{{trans('homepage.made-by')}} <b>Ginters Juris Vehi</b></p>
 </div>
 @endsection
 

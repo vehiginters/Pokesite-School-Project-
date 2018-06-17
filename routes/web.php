@@ -23,6 +23,22 @@ Route::get('/custom/vote1', 'VoteController@vote1');
 Route::get('/custom/vote2', 'VoteController@vote2');
 Route::get('/custom/vote3', 'VoteController@vote3');
 Route::get('/custom/vote4', 'VoteController@vote4');
+Route::get('/en', function(){
+  session()->put('locale', 'en');
+  return redirect('/');
+});
+Route::get('/lv', function(){
+  session()->put('locale', 'lv');
+  return redirect('/');
+});
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
 
 Auth::routes();
 
