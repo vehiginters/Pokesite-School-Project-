@@ -25,13 +25,13 @@
       @include('inc.navbar')
         <div class="row">
           <div class="col-lg-3">
-              <img src="/img/right.jpg" />
+              <img src="/img/right.jpg " alt="right" />
           </div>
           <div class="col-lg-6">
             @yield('content')
           </div>
           <div class="col-lg-3">
-            <img src="/img/left.jpg" />
+            <img src="/img/left.jpg" alt="left"/>
           </div>
         </div>
 </body>

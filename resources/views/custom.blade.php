@@ -8,7 +8,7 @@
 <div class="container">
   <div class="row">
     <div class="col-lg-3 pt-3 pl-5 pr-3 pb-3 ml-5 text-center">
-      <img src="/img/Drifblim.png" class="imgs boxy"></img>
+      <img src="/img/Drifblim.png" class="imgs boxy" alt="Drifblim">
       <div class="text-center ml-5">
       <p class="lead"><b>Drifblim</b></p>
       <p>{{trans('custom.votes')}}:</p>
@@ -24,7 +24,7 @@ echo VoteController::get_votes(1); ?></p>
     <div class="col-lg-2">
     </div>
     <div class="col-lg-3 pt-3 pl-5 pr-3 pb-3 ml-5 text-center">
-      <img src="/img/Garchomp.png" class="imgs boxy"></img>
+      <img src="/img/Garchomp.png" class="imgs boxy" alt="Garchomp">
       <div class="text-center ml-5">
       <p class="lead"><b>Garchomp</b></p>
       <p>{{trans('custom.votes')}}:</p>
@@ -39,7 +39,7 @@ echo VoteController::get_votes(1); ?></p>
   </div>
   <div class="row">
     <div class="col-lg-3 pt-3 pl-5 pr-3 pb-3 ml-5 text-center">
-      <img src="/img/Chandelure.png" class="imgs boxy"></img>
+      <img src="/img/Chandelure.png" class="imgs boxy" alt="Chandelure">
       <div class="text-center ml-5">
       <p class="lead"><b>Chandelure</b></p>
       <p>{{trans('custom.votes')}}:</p>
@@ -54,7 +54,7 @@ echo VoteController::get_votes(1); ?></p>
     <div class="col-lg-2">
     </div>
     <div class="col-lg-3 pt-3 pl-5 pr-3 pb-3 ml-5 text-center">
-      <img src="/img/Skarmory.png" class="imgs boxy"></img>
+      <img src="/img/Skarmory.png" class="imgs boxy" alt="Skarmory">
       <div class="text-center ml-5">
       <p class="lead"><b>Skarmory</b></p>
       <p>{{trans('custom.votes')}}:</p>

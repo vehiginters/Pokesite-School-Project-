@@ -21,13 +21,13 @@
               <a class="nav-link {{Request::is('/') ? 'active' : ''}}" href="/submissions" style="color: white;">{{trans('navbar.submissions')}}<span class="sr-only">(current)</span></a>
             </li>
             @endif
-            @if(App::isLocale('lv'))
-            <a class="navbar-brand ml-4"  href={{url('lang/en')}}> EN <img src="/img/us.png" width="23" height="23" alt="pokeball"></a>
-            @endif
-            @if(App::isLocale('en'))
-            <a class="navbar-brand ml-4"  href={{url('lang/lv')}}> LV <img src="/img/lv.png" width="23" height="23" alt="pokeball"></a>
-            @endif
           </ul>
+          @if(App::isLocale('lv'))
+          <a class="navbar-brand ml-4"  href={{url('lang/en')}}> EN <img src="/img/us.png" width="23" height="23" alt="pokeball"></a>
+          @endif
+          @if(App::isLocale('en'))
+          <a class="navbar-brand ml-4"  href={{url('lang/lv')}}> LV <img src="/img/lv.png" width="23" height="23" alt="pokeball"></a>
+          @endif
           <ul class="nav navbar-nav navbar-right">
             @if(Auth::guest())
             <li class="nav-item">
@@ -42,7 +42,7 @@
                 <p class="mt-2" style="color: white;"> {{trans('navbar.hey')}} , {{Auth::user()->name}}</p>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/logout "style="color:#76a4ed;">{{trans('navbar.logout')}}</a>
+                <a class="nav-link" href="/logout " style="color:#76a4ed;">{{trans('navbar.logout')}}</a>
             </li>
             @endif
           </ul>
