@@ -22,10 +22,10 @@
             </li>
             @endif
             @if(App::isLocale('lv'))
-            <a class="navbar-brand ml-4"  href={{url('/locale')}}> EN <img src="/img/us.png" width="23" height="23" alt="pokeball"></a>
+            <a class="navbar-brand ml-4"  href={{url('lang/en')}}> EN <img src="/img/us.png" width="23" height="23" alt="pokeball"></a>
             @endif
             @if(App::isLocale('en'))
-            <a class="navbar-brand ml-4"  href={{url('/locale')}}> LV <img src="/img/lv.png" width="23" height="23" alt="pokeball"></a>
+            <a class="navbar-brand ml-4"  href={{url('lang/lv')}}> LV <img src="/img/lv.png" width="23" height="23" alt="pokeball"></a>
             @endif
           </ul>
           <ul class="nav navbar-nav navbar-right">
